@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
+
                 sh '''
+                export PATH=/usr/local/bin
                 npm install
                 '''
             }
